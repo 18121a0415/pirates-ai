@@ -9,6 +9,7 @@ fastapi = {extras = ["standard"], version = "*"}
 fastkafka = "*"
 aiomisc = "*"
 openai = "*"
+wikipedia = "*"
 
 [dev-packages]
 
