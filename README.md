@@ -27,7 +27,7 @@ Pirates AI is a project focused on HACKATHON 2025.
    ```
 2. Install dependencies:
    ```
-    pipenv install
+   pipenv install
    ```
 
 ## Usage
@@ -35,17 +35,20 @@ Pirates AI is a project focused on HACKATHON 2025.
 To run the program:
 
 ```
-flask dev main.py
+pipenv run uvicorn pirates_ai2.main:app --reload
 ```
 
 ## Project Structure
 
 ```
 pirates-ai2/
-├── main.py           # Entry point for the application
-├── OpenApi.py        # Script for OpenAI API interactions
-├── wikipedia.py      # Script for Wikipedia interactions
-├── Pipfile.lock      # Dependency lock file
+├── pirates_ai2/      # Main package directory
+│   ├── __init__.py   # Package initializer
+│   ├── main.py       # Entry point for the application
+│   ├── openapi.py    # Script for OpenAI API interactions
+│   ├── wikipedia.py  # Script for Wikipedia interactions
+├── Pipfile           # Pipenv dependency file
+├── Pipfile.lock      # Pipenv lock file
 ├── LICENSE           # License file
 └── README.md         # Project documentation
 ```
