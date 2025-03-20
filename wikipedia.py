@@ -10,5 +10,3 @@ except wikipedia.exceptions.PageError as e:
     print(f"Page error: {e}")
 except wikipedia.exceptions.DisambiguationError as e:
     print(f"Disambiguation error: {e.options}")
-
-# wikipedia.set_lang("en")  # Set language back to English

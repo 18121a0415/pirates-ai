@@ -1,6 +1,7 @@
 import openai
 
 # Set OpenAI API key
+# Make sure to replace YOuR_API_KEY with your actual OpenAI API key
 openai.api_key = 'YOUR_API_KEY'
 
 # Define prompt
